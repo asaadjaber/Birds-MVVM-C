@@ -1,0 +1,16 @@
+# Xcode
+
+# User settings
+xcuserdata/
+*.xcworkspace/
+
+# App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
