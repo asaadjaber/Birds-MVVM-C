@@ -12,8 +12,12 @@ class BirdsListViewController: UICollectionViewController {
     var birds: [Bird] = [Bird(name: "Sparrow", family: "some"),
                          Bird(name: "Crow", family: "some")]
     
+    var birdDetailViewCoordinator: BirdDetailViewCoordinator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        birdDetailViewCoordinator = BirdDetailViewCoordinator()
         
         collectionView.backgroundColor = .yellow
         collectionView.register(BirdStackCellView.self, forCellWithReuseIdentifier: BirdStackCellView.cellReuseID)
@@ -40,6 +44,7 @@ class BirdsListViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("selected bird \(birds[indexPath.row])")
+        birdDetailViewCoordinator.presentDetailView(from: self)
     }
 }
 
