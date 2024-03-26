@@ -16,6 +16,10 @@
 		4E8A5FB92BA5A70100152520 /* BirdStackCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A5FB82BA5A70100152520 /* BirdStackCellView.swift */; };
 		4E8A5FC52BA5AEE600152520 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A5FC42BA5AEE600152520 /* AppCoordinator.swift */; };
 		4E8A5FC72BA6E0C600152520 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A5FC62BA6E0C600152520 /* Bird.swift */; };
+		4E8A5FC92BA6F1F700152520 /* BirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A5FC82BA6F1F700152520 /* BirdDetailViewController.swift */; };
+		4EB9BC862BB2EEB200E0EA72 /* BirdDetailHeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9BC852BB2EEB200E0EA72 /* BirdDetailHeaderImageView.swift */; };
+		4EB9BC8A2BB2F56C00E0EA72 /* BirdDetailViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9BC892BB2F56C00E0EA72 /* BirdDetailViewCoordinator.swift */; };
+		4EB9BC8C2BB2F71900E0EA72 /* BirdDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9BC8B2BB2F71900E0EA72 /* BirdDetailCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4E8A5FB82BA5A70100152520 /* BirdStackCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdStackCellView.swift; sourceTree = "<group>"; };
 		4E8A5FC42BA5AEE600152520 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4E8A5FC62BA6E0C600152520 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		4E8A5FC82BA6F1F700152520 /* BirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailViewController.swift; sourceTree = "<group>"; };
+		4EB9BC852BB2EEB200E0EA72 /* BirdDetailHeaderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailHeaderImageView.swift; sourceTree = "<group>"; };
+		4EB9BC892BB2F56C00E0EA72 /* BirdDetailViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailViewCoordinator.swift; sourceTree = "<group>"; };
+		4EB9BC8B2BB2F71900E0EA72 /* BirdDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,8 @@
 			children = (
 				4E8A5F882BA597E300152520 /* AppDelegate.swift */,
 				4E8A5FC42BA5AEE600152520 /* AppCoordinator.swift */,
-				4E8A5F8C2BA597E300152520 /* BirdsListViewController.swift */,
-				4E8A5FB82BA5A70100152520 /* BirdStackCellView.swift */,
+				4EB9BC872BB2F1C700E0EA72 /* BirdsList */,
+				4EB9BC882BB2F1EC00E0EA72 /* BirdDetail */,
 				4E8A5FC62BA6E0C600152520 /* Bird.swift */,
 				4E8A5F912BA597E400152520 /* Assets.xcassets */,
 				4E8A5F962BA597E400152520 /* Info.plist */,
@@ -125,6 +133,34 @@
 				4E8A5FAB2BA597E400152520 /* BirdsUITestsLaunchTests.swift */,
 			);
 			path = BirdsUITests;
+			sourceTree = "<group>";
+		};
+		4EB9BC872BB2F1C700E0EA72 /* BirdsList */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A5F8C2BA597E300152520 /* BirdsListViewController.swift */,
+				4E8A5FB82BA5A70100152520 /* BirdStackCellView.swift */,
+			);
+			path = BirdsList;
+			sourceTree = "<group>";
+		};
+		4EB9BC882BB2F1EC00E0EA72 /* BirdDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4EB9BC892BB2F56C00E0EA72 /* BirdDetailViewCoordinator.swift */,
+				4E8A5FC82BA6F1F700152520 /* BirdDetailViewController.swift */,
+				4EB9BC8D2BB2F72E00E0EA72 /* Views */,
+			);
+			path = BirdDetail;
+			sourceTree = "<group>";
+		};
+		4EB9BC8D2BB2F72E00E0EA72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4EB9BC8B2BB2F71900E0EA72 /* BirdDetailCellView.swift */,
+				4EB9BC852BB2EEB200E0EA72 /* BirdDetailHeaderImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8A5FC92BA6F1F700152520 /* BirdDetailViewController.swift in Sources */,
 				4E8A5F8D2BA597E300152520 /* BirdsListViewController.swift in Sources */,
+				4EB9BC8C2BB2F71900E0EA72 /* BirdDetailCellView.swift in Sources */,
 				4E8A5FC72BA6E0C600152520 /* Bird.swift in Sources */,
 				4E8A5FB92BA5A70100152520 /* BirdStackCellView.swift in Sources */,
+				4EB9BC862BB2EEB200E0EA72 /* BirdDetailHeaderImageView.swift in Sources */,
+				4EB9BC8A2BB2F56C00E0EA72 /* BirdDetailViewCoordinator.swift in Sources */,
 				4E8A5FC52BA5AEE600152520 /* AppCoordinator.swift in Sources */,
 				4E8A5F892BA597E300152520 /* AppDelegate.swift in Sources */,
 			);
